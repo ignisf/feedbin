@@ -4,7 +4,7 @@ lock "3.9.1"
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 set :application, "feedbin"
-set :repo_url, "git@github.com:feedbin/#{fetch(:application)}.git"
+set :repo_url, "git@github.com:ignisf/#{fetch(:application)}.git"
 set :deploy_to, "/home/feedbin/#{fetch(:application)}"
 set :bundle_jobs, 4
 # set :rbenv_type, :system
@@ -21,4 +21,3 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 append :linked_files, ".env", "config/secrets.yml"
 
 before "deploy", "deploy:quiet"
-after "deploy:published", "deploy:restart"
