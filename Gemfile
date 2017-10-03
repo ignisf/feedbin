@@ -23,7 +23,6 @@ group :development do
 end
 
 group :development, :test do
-  gem 'puma'
   gem 'minitest'
   gem 'stripe-ruby-mock', require: 'stripe_mock'
   gem 'faker'
@@ -40,7 +39,7 @@ group :production do
 end
 
 gem 'pg'
-gem 'unicorn'
+gem 'puma'
 
 gem 'net-http2',             github: 'feedbin/net-http2',           ref: '8be56ce'
 gem 'apnotic',               github: 'feedbin/apnotic',             ref: 'd5481ec'
