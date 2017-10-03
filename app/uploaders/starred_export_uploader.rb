@@ -1,7 +1,4 @@
 class StarredExportUploader < CarrierWave::Uploader::Base
-
-  storage :fog
-
   def store_dir
     "starred_export"
   end
