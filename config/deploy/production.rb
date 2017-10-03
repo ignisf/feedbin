@@ -1,2 +1,1 @@
-server 'app1.feedbin.com', user: 'app', roles: %w{app}
-server 'app2.feedbin.com', user: 'app', roles: %w{app}
+server 'edge.btroyan.info', user: 'feedbin', roles: %w{app}
